@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -68,6 +69,22 @@
                 cursor: pointer;
             }
 
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #334f55;
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #ca8723;
+                color: white;
+            }
+
             footer {
                 background-color: #334f55;
                 color: white;
@@ -104,7 +121,6 @@
                 con la carne y las salsas típicas del kebab.
                 Es ideal para compartir con amigos y familia.
             </p>
-
 
             <hr>
         </section>
@@ -169,13 +185,33 @@
             <p><strong>Cocción:</strong> 10-15 minutos.</p>
             <p><strong>Tipo de dieta:</strong> Omnívora.</p>
 
+            <h3>Tabla de información</h3>
+
+            <table>
+                <tr>
+                    <th>Dificultad</th>
+                    <th>Preparación</th>
+                    <th>Cocción</th>
+                </tr>
+                <tr>
+                    <td>Fácil</td>
+                    <td>15 minutos</td>
+                    <td>10-15 minutos</td>
+                </tr>
+            </table>
+
             <h3>Intolerancias y alérgenos</h3>
 
             <ul>
                 <li>Gluten: puede estar presente en la masa.</li>
                 <li>Lactosa: puede estar presente en el queso.</li>
-                <li>Huevo: puede estar presente en algunas salsas.</li>
+                <li>Fructosa: el tomate contiene fructosa.</li>
+                <li>Marisco: no se utiliza en esta receta.</li>
+                <li>Huevos: pueden estar presentes en algunas salsas.</li>
+                <li>Frutos secos: comprobar las etiquetas.</li>
                 <li>Soja: puede estar presente en productos preparados.</li>
+                <li>Picante: depende de las salsas y especias utilizadas.</li>
+                <li>Cacahuetes: no se utilizan en esta receta.</li>
             </ul>
 
             <p>
@@ -187,8 +223,10 @@
             <hr>
 
             <h3>Más recetas</h3>
-            <button onclick="location.href='https://www.google.com'"> Mas recetas
-</button>
+
+            <button onclick="location.href='https://www.google.com'">
+                Más recetas
+            </button>
         </section>
 
         <footer>
@@ -196,7 +234,6 @@
             <p>Programador: Marc</p>
             <p>
                 Correo: marcfloresgutsens@gmail.com
-                
             </p>
         </footer>
 
