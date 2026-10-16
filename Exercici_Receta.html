@@ -1,34 +1,204 @@
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title> RECEPTA_DE_CUINA</title>
+        <title>RECETAS CON MARC</title>
+
         <style>
-            header{
+            body {
+                background-color: rgba(128, 233, 241, 0.089);
+                font-family: Arial;
+            }
+
+            header {
+                padding: 10px;
+                text-align: center;
+            }
+
+            #Receta {
+                color: white;
+                background-color: #ca8723;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            nav {
+                text-align: center;
+                padding: 10px;
+            }
+
+            nav a {
+                color: #0d8397;
+                margin: 10px;
+            }
+
+            section {
+                background-color: white;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            h2, h3 {
+                color: #ca8723;
+            }
+
+            hr {
+                border: 2px solid #334f55dc;
+                margin: 20px 0;
+            }
+
+            img {
+                width: 300px;
+                border-radius: 10px;
+            }
+
+            video {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            button {
+                background-color: #0d8397dc;
+                color: white;
+                padding: 10px 20px;
                 border: none;
-                background-color:rgb(230, 184, 77);
-                padding: 25px;
-                border-radius: 20px;
+                border-radius: 5px;
+                cursor: pointer;
             }
-            h1{
+
+            footer {
+                background-color: #334f55;
+                color: white;
                 text-align: center;
-            }
-            h4{
-                text-align: center;
+                padding: 10px;
             }
         </style>
     </head>
 
     <body>
-         <header>
-                <h1 id="Titulo">TOP RECETAS </h1>
-                <h4>Marc Flores Gutsens</h4>
+
+        <header>
+            <h1 id="Receta">RECETAS CON MARC</h1>
+            <p>Recetas fáciles y deliciosas para todos.</p>
+            <p>Autor: Marc Flores Gutsens</p>
+
+            <video width="500" controls loop>
+                <source src="Imagenes/VIDEO PIZZA.mp4" type="video/mp4">
+            </video>
         </header>
-        <section> 
-                <h1>PIZZA DURUM</h1>
-                <p>INGREDIENTES:</p>
+
+        <nav>
+            <a href="#descripcion">Descripción</a>
+            <a href="#ingredientes">Ingredientes</a>
+            <a href="#preparacion">Preparación</a>
+            <a href="#informacion">Información</a>
+        </nav>
+
+        <section id="descripcion">
+            <h2>Pizza Durum</h2>
+
+            <p>
+                La pizza durum es una combinación de la pizza clásica
+                con la carne y las salsas típicas del kebab.
+                Es ideal para compartir con amigos y familia.
+            </p>
+
+
+            <hr>
         </section>
+
+        <section id="ingredientes">
+            <h2>Ingredientes (2 personas)</h2>
+
+            <p>Para preparar esta receta necesitarás:</p>
+
+            <ul>
+                <li>1 masa de pizza</li>
+                <li>200 g de pollo</li>
+                <li>1 cebolla</li>
+                <li>1 tomate</li>
+                <li>150 g de mozzarella</li>
+                <li>Lechuga</li>
+                <li>Salsa de yogur</li>
+                <li>Tomate frito</li>
+                <li>Aceite, sal, pimienta y pimentón</li>
+            </ul>
+
+            <hr>
+        </section>
+
+        <section id="preparacion">
+            <h2>Cómo preparar la pizza</h2>
+
+            <h3>1. Preparar el pollo</h3>
+            <p>
+                Corta el pollo en tiras, añade las especias
+                y cocínalo en una sartén con aceite.
+            </p>
+
+            <h3>2. Montar la pizza</h3>
+            <p>
+                Pon tomate frito sobre la masa y añade
+                el queso, la cebolla y el pollo.
+            </p>
+
+            <h3>3. Hornear</h3>
+            <p>
+                Hornea la pizza a 220 grados durante
+                unos 10-15 minutos.
+            </p>
+
+            <h3>4. Añadir las salsas</h3>
+            <p>
+                Cuando esté lista, añade la lechuga,
+                el tomate fresco y la salsa de yogur.
+            </p>
+
+            <p><strong>¡Y a disfrutar de la pizza durum!</strong></p>
+
+            <hr>
+        </section>
+
+        <section id="informacion">
+            <h2>Información de la receta</h2>
+
+            <p><strong>Dificultad:</strong> Fácil.</p>
+            <p><strong>Preparación:</strong> 15 minutos.</p>
+            <p><strong>Cocción:</strong> 10-15 minutos.</p>
+            <p><strong>Tipo de dieta:</strong> Omnívora.</p>
+
+            <h3>Intolerancias y alérgenos</h3>
+
+            <ul>
+                <li>Gluten: puede estar presente en la masa.</li>
+                <li>Lactosa: puede estar presente en el queso.</li>
+                <li>Huevo: puede estar presente en algunas salsas.</li>
+                <li>Soja: puede estar presente en productos preparados.</li>
+            </ul>
+
+            <p>
+                Se pueden utilizar productos sin gluten
+                o sin lactosa como alternativa.
+                Hay que comprobar las etiquetas.
+            </p>
+
+            <hr>
+
+            <h3>Más recetas</h3>
+            <button onclick="location.href='https://www.google.com'"> Mas recetas
+</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Recetas con Marc. Todos los derechos reservados.</p>
+            <p>Programador: Marc</p>
+            <p>
+                Correo: marcfloresgutsens@gmail.com
+                
+            </p>
+        </footer>
+
     </body>
-    
-
-
 </html>
