@@ -1,324 +1,391 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIZZA DURUM</title>
 
-    <style>
-        body {
-            background-color: rgba(128, 233, 241, 0.089);
-            font-family: Arial;
-            margin: 0;
-            padding: 20px;
-            text-align: left;
-        }
+<style>
+    body {
+        background-color: #f8f4ed;
+        font-family: Arial, sans-serif;
+        color: #38312b;
+        margin: 0;
+        padding: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
 
-        header {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #Receta {
+        color: white;
+        background-color: #b85c38;
+        margin: 20px auto;
+        padding: 30px 20px;
+        border-radius: 12px;
+        max-width: 1000px;
+        font-size: 38px;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 10px rgba(80, 45, 25, 0.12);
+    }
+
+    header p {
+        color: #75675b;
+    }
+
+    nav {
+        text-align: center;
+        margin: 25px auto;
+        max-width: 1050px;
+    }
+
+    nav a {
+        color: #655044;
+        margin: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        color: white;
+        background-color: #b85c38;
+    }
+
+    nav a.active {
+        color: white;
+        background-color: #b85c38;
+    }
+
+    main {
+        max-width: 1040px;
+        margin: auto;
+    }
+
+    section {
+        background-color: white;
+        max-width: 1000px;
+        margin: 25px auto;
+        padding: 28px;
+        border-radius: 12px;
+        text-align: left;
+        box-shadow: 0 3px 12px rgba(80, 45, 25, 0.07);
+    }
+
+    h2, h3 {
+        color: #a84f2d;
+    }
+
+    h2 {
+        padding-bottom: 8px;
+        border-bottom: 2px solid #f0dfd2;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #e4d7ca;
+        margin: 25px 0;
+    }
+
+    img {
+        width: 300px;
+        max-width: 100%;
+        border-radius: 10px;
+        display: block;
+        margin: 15px 0;
+    }
+
+    video {
+        width: 100%;
+        max-width: 900px;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
+        background-color: #2b2521;
+    }
+
+    ul, ol {
+        padding-left: 25px;
+    }
+
+    li {
+        padding: 3px 0;
+    }
+
+    button, .boton {
+        background-color: #b85c38;
+        color: white;
+        padding: 12px 22px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    button:hover, .boton:hover {
+        background-color: #8f4127;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 15px 0;
+    }
+
+    th, td {
+        border: 1px solid #eadbd0;
+        padding: 12px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #b85c38;
+        color: white;
+    }
+
+    td {
+        background-color: #fffaf5;
+    }
+
+    footer {
+        background-color: #39302a;
+        color: #f8f4ed;
+        text-align: center;
+        padding: 22px;
+        border-radius: 12px;
+        max-width: 1010px;
+        margin: 25px auto;
+    }
+
+    footer a {
+        color: #f2b995;
+    }
+
+    footer a:hover {
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        body {
             padding: 10px;
-            text-align: center;
         }
 
         #Receta {
-            color: white;
-            background-color: #ca8723;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 1000px;
+            font-size: 29px;
+            padding: 22px 12px;
         }
 
         nav {
-            text-align: center;
-            margin: 20px;
+            margin: 15px auto;
         }
 
         nav a {
-            color: teal;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ca8723;
-        }
-
-        nav a.active {
-            color: #ca8723;
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 1040px;
-            margin: auto;
+            display: inline-block;
+            margin: 4px;
+            padding: 7px 9px;
         }
 
         section {
-            background-color: white;
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: left;
-        }
-
-        h2, h3 {
-            color: #ca8723;
-        }
-
-        hr {
-            border: 1px solid darkblue;
-        }
-
-        img {
-            width: 300px;
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        video {
-            width: 100%;
-            max-width: 900px;
-            border-radius: 10px;
-            display: block;
-            margin: 20px auto;
-        }
-
-        ul, ol {
-            padding-left: 25px;
-        }
-
-        button, .boton {
-            background-color: teal;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        table {
-            border-collapse: separate;
-            border-spacing: 0;
-            width: 100%;
-            border-radius: 6px;
-            overflow: hidden;
+            padding: 18px;
+            margin: 15px auto;
         }
 
         th, td {
-            border: 1px solid darkblue;
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #ca8723;
-            color: white;
+            padding: 8px 4px;
+            font-size: 14px;
         }
 
         footer {
-            background-color: darkblue;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            border-radius: 10px;
-            max-width: 1010px;
-            margin: 20px auto;
+            padding: 18px 12px;
+            overflow-wrap: anywhere;
         }
+    }
+</style>
 
-        footer a {
-            color: white;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 8px;
-            }
-
-            section {
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1 id="Receta">PIZZA DURUM</h1>
-        <p>Autor: Marc Flores Gutsens</p>
-    </header>
+<header>
+    <h1 id="Receta">PIZZA DURUM</h1>
+    <p>Autor: Marc Flores Gutsens</p>
+</header>
 
-    <nav>
-        <a href="Exercici_Receta.html" class="active">Inicio</a>
-        <a href="#descripcion">Descripción</a>
-        <a href="#ingredientes">Ingredientes</a>
-        <a href="#preparacion">Preparación</a>
-        <a href="#informacion">Información</a>
-        <a href="FormularioReceta.html">Formulario</a>
-        <a href="https://www.google.com" target="_blank">Web externa</a>
-    </nav>
+<nav>
+    <a href="Exercici_Receta.html" class="active">Inicio</a>
+    <a href="#descripcion">Descripción</a>
+    <a href="#ingredientes">Ingredientes</a>
+    <a href="#preparacion">Preparación</a>
+    <a href="#informacion">Información</a>
+    <a href="FormularioReceta.html">Formulario</a>
+    <a href="https://www.google.com" target="_blank">Web externa</a>
+</nav>
 
-    <hr>
+<hr>
 
-    <main>
+<main>
 
-        <section id="descripcion">
-            <h2>Descripción</h2>
-
-            <p>
-                La pizza durum es una receta que combina los ingredientes típicos
-                de una pizza con el sabor del durum. Es fácil de preparar y perfecta
-                para disfrutar de una comida diferente.
-            </p>
-
-            <h3>Foto de la receta</h3>
-
-            <img src="Imagenes/pizza durum.png" alt="Pizza durum casera">
-
-            <hr>
-
-            <h3>Vídeo de la receta</h3>
-
-            <video controls loop>
-                <source src="Imagenes/VIDEO PIZZA.mp4" type="video/mp4">
-                Tu navegador no puede reproducir este vídeo.
-            </video>
-        </section>
-
-        <section id="ingredientes">
-            <h2>Ingredientes</h2>
-
-            <ul>
-                <li>1 base de pizza</li>
-                <li>Pollo</li>
-                <li>Cebolla</li>
-                <li>Tomate</li>
-                <li>Queso mozzarella</li>
-                <li>Lechuga</li>
-                <li>Salsa de yogur</li>
-                <li>Salsa de tomate</li>
-                <li>Aceite, sal, pimienta y pimentón</li>
-            </ul>
-        </section>
-
-        <section id="preparacion">
-            <h2>Preparación</h2>
-
-            <ol>
-                <li>Precalentar el horno según las indicaciones de la base de pizza.</li>
-                <li>Cortar el pollo y la cebolla en trozos pequeños.</li>
-                <li>Cocinar el pollo en una sartén con un poco de aceite y especias.</li>
-                <li>Extender la salsa de tomate sobre la base de pizza.</li>
-                <li>Añadir el pollo, la cebolla y el queso mozzarella.</li>
-                <li>Hornear durante 10-15 minutos, hasta que el queso esté fundido.</li>
-                <li>Añadir la lechuga y la salsa de yogur antes de servir.</li>
-            </ol>
-
-            <p>
-                <strong>Consejo:</strong> Añade la lechuga después de hornear
-                para que se mantenga fresca.
-            </p>
-        </section>
-
-        <section id="informacion">
-            <h2>Información de la receta</h2>
-
-            <p><strong>Dificultad:</strong> Fácil.</p>
-            <p><strong>Tiempo de preparación:</strong> 15 minutos.</p>
-            <p><strong>Tiempo de cocción:</strong> 10-15 minutos.</p>
-            <p><strong>Tipo de dieta:</strong> Omnívora.</p>
-
-            <h3>Tabla de información</h3>
-
-            <table>
-                <tr>
-                    <th>Dificultad</th>
-                    <th>Preparación</th>
-                    <th>Cocción</th>
-                </tr>
-                <tr>
-                    <td>Fácil</td>
-                    <td>15 minutos</td>
-                    <td>10-15 minutos</td>
-                </tr>
-            </table>
-
-            <h3>Intolerancias y alérgenos</h3>
-
-            <p>
-                Esta receta puede contener gluten y lactosa, dependiendo
-                de los ingredientes utilizados. Hay que revisar las etiquetas
-                de los productos para comprobar su composición y posibles trazas.
-            </p>
-
-            <ul>
-                <li><strong>Gluten:</strong> puede estar presente en la base de pizza.</li>
-                <li><strong>Lactosa:</strong> puede estar presente en el queso y la salsa de yogur.</li>
-                <li><strong>Fructosa:</strong> revisar la composición de las salsas y otros ingredientes.</li>
-                <li><strong>Marisco:</strong> no se añade intencionadamente.</li>
-                <li><strong>Huevos:</strong> revisar las etiquetas de las salsas.</li>
-                <li><strong>Frutos secos:</strong> no se añaden intencionadamente.</li>
-                <li><strong>Soja:</strong> revisar las etiquetas de los productos preparados.</li>
-                <li><strong>Picante:</strong> depende de las especias que se utilicen.</li>
-                <li><strong>Cacahuetes:</strong> no se añaden intencionadamente.</li>
-            </ul>
-
-            <h3>Tipos de dieta</h3>
-
-            <ul>
-                <li><strong>Omnívora:</strong> sí, porque lleva pollo.</li>
-                <li><strong>Celíaca:</strong> solo con ingredientes certificados sin gluten y evitando la contaminación cruzada.</li>
-                <li><strong>Vegana:</strong> no, porque lleva pollo y queso.</li>
-                <li><strong>Vegetariana:</strong> habría que quitar el pollo y comprobar los demás ingredientes.</li>
-                <li><strong>Flexitariana:</strong> puede encajar dependiendo de la alimentación de cada persona.</li>
-            </ul>
-
-            <hr>
-
-            <h3>Más recetas</h3>
-
-            <p>
-                Si quieres descubrir más recetas, puedes visitar Google.
-            </p>
-
-            <a class="boton"
-               href="https://www.google.com"
-               target="_blank">
-                Buscar más recetas
-            </a>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Recetas con Marc.</p>
-        <p>Programador: Marc Flores Gutsens</p>
+    <section id="descripcion">
+        <h2>Descripción</h2>
 
         <p>
-            Licencia:
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-               target="_blank">
-                Creative Commons BY-NC-SA 4.0
-            </a>
+            La pizza durum es una receta que combina los ingredientes típicos
+            de una pizza con el sabor del durum. Es fácil de preparar y perfecta
+            para disfrutar de una comida diferente.
         </p>
 
+        <h3>Foto de la receta</h3>
+
+        <img src="Imagenes/pizza durum.png" alt="Pizza durum casera">
+
+        <hr>
+
+        <h3>Vídeo de la receta</h3>
+
+        <video controls loop>
+            <source src="Imagenes/VIDEO PIZZA.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este vídeo.
+        </video>
+    </section>
+
+    <section id="ingredientes">
+        <h2>Ingredientes</h2>
+
+        <ul>
+            <li>1 base de pizza</li>
+            <li>Pollo</li>
+            <li>Cebolla</li>
+            <li>Tomate</li>
+            <li>Queso mozzarella</li>
+            <li>Lechuga</li>
+            <li>Salsa de yogur</li>
+            <li>Salsa de tomate</li>
+            <li>Aceite, sal, pimienta y pimentón</li>
+        </ul>
+    </section>
+
+    <section id="preparacion">
+        <h2>Preparación</h2>
+
+        <ol>
+            <li>Precalentar el horno según las indicaciones de la base de pizza.</li>
+            <li>Cortar el pollo y la cebolla en trozos pequeños.</li>
+            <li>Cocinar el pollo en una sartén con un poco de aceite y especias.</li>
+            <li>Extender la salsa de tomate sobre la base de pizza.</li>
+            <li>Añadir el pollo, la cebolla y el queso mozzarella.</li>
+            <li>Hornear durante 10-15 minutos, hasta que el queso esté fundido.</li>
+            <li>Añadir la lechuga y la salsa de yogur antes de servir.</li>
+        </ol>
+
         <p>
-            Email:
-            <a href="mailto:marcfloresgutsens@gmail.com">
-                marcfloresgutsens@gmail.com
-            </a>
+            <strong>Consejo:</strong> Añade la lechuga después de hornear
+            para que se mantenga fresca.
         </p>
-    </footer>
+    </section>
+
+    <section id="informacion">
+        <h2>Información de la receta</h2>
+
+        <p><strong>Dificultad:</strong> Fácil.</p>
+        <p><strong>Tiempo de preparación:</strong> 15 minutos.</p>
+        <p><strong>Tiempo de cocción:</strong> 10-15 minutos.</p>
+        <p><strong>Tipo de dieta:</strong> Omnívora.</p>
+
+        <h3>Tabla de información</h3>
+
+        <table>
+            <tr>
+                <th>Dificultad</th>
+                <th>Preparación</th>
+                <th>Cocción</th>
+            </tr>
+            <tr>
+                <td>Fácil</td>
+                <td>15 minutos</td>
+                <td>10-15 minutos</td>
+            </tr>
+        </table>
+
+        <h3>Intolerancias y alérgenos</h3>
+
+        <p>
+            Esta receta puede contener gluten y lactosa, dependiendo
+            de los ingredientes utilizados. Hay que revisar las etiquetas
+            de los productos para comprobar su composición y posibles trazas.
+        </p>
+
+        <ul>
+            <li><strong>Gluten:</strong> puede estar presente en la base de pizza.</li>
+            <li><strong>Lactosa:</strong> puede estar presente en el queso y la salsa de yogur.</li>
+            <li><strong>Fructosa:</strong> revisar la composición de las salsas y otros ingredientes.</li>
+            <li><strong>Marisco:</strong> no se añade intencionadamente.</li>
+            <li><strong>Huevos:</strong> revisar las etiquetas de las salsas.</li>
+            <li><strong>Frutos secos:</strong> no se añaden intencionadamente.</li>
+            <li><strong>Soja:</strong> revisar las etiquetas de los productos preparados.</li>
+            <li><strong>Picante:</strong> depende de las especias que se utilicen.</li>
+            <li><strong>Cacahuetes:</strong> no se añaden intencionadamente.</li>
+        </ul>
+
+        <h3>Tipos de dieta</h3>
+
+        <ul>
+            <li><strong>Omnívora:</strong> sí, porque lleva pollo.</li>
+            <li><strong>Celíaca:</strong> solo con ingredientes certificados sin gluten y evitando la contaminación cruzada.</li>
+            <li><strong>Vegana:</strong> no, porque lleva pollo y queso.</li>
+            <li><strong>Vegetariana:</strong> habría que quitar el pollo y comprobar los demás ingredientes.</li>
+            <li><strong>Flexitariana:</strong> puede encajar dependiendo de la alimentación de cada persona.</li>
+        </ul>
+
+        <hr>
+
+        <h3>Más recetas</h3>
+
+        <p>
+            Si quieres descubrir más recetas, puedes visitar Google.
+        </p>
+
+        <a class="boton"
+           href="https://www.google.com"
+           target="_blank">
+            Buscar más recetas
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Recetas con Marc.</p>
+    <p>Programador: Marc Flores Gutsens</p>
+
+    <p>
+        Licencia:
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+           target="_blank">
+            Creative Commons BY-NC-SA 4.0
+        </a>
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:marcfloresgutsens@gmail.com">
+            marcfloresgutsens@gmail.com
+        </a>
+    </p>
+</footer>
 
 </body>
 </html>
-```
