@@ -1,13 +1,9 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>RECETAS CON MARC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA DURUM</title>
 
     <style>
         body {
@@ -42,6 +38,20 @@
             margin: 10px;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ca8723;
+        }
+
+        nav a.active {
+            color: #ca8723;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1040px;
+            margin: auto;
         }
 
         section {
@@ -79,13 +89,15 @@
             padding-left: 25px;
         }
 
-        button {
+        button, .boton {
             background-color: teal;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
         }
 
         table {
@@ -117,6 +129,10 @@
             margin: 20px auto;
         }
 
+        footer a {
+            color: white;
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -137,122 +153,167 @@
 <body>
 
     <header>
-        <h1 id="Receta">RECETAS CON MARC</h1>
+        <h1 id="Receta">PIZZA DURUM</h1>
         <p>Autor: Marc Flores Gutsens</p>
     </header>
 
     <nav>
+        <a href="Exercici_Receta.html" class="active">Inicio</a>
         <a href="#descripcion">Descripción</a>
         <a href="#ingredientes">Ingredientes</a>
         <a href="#preparacion">Preparación</a>
         <a href="#informacion">Información</a>
+        <a href="FormularioReceta.html">Formulario</a>
+        <a href="https://www.google.com" target="_blank">Web externa</a>
     </nav>
 
     <hr>
 
-    <section id="descripcion">
-        <h2>Pizza Durum</h2>
+    <main>
 
-        <p>
-            La pizza durum es una receta que combina los ingredientes típicos
-            de una pizza con el sabor del durum. Es fácil de preparar y perfecta
-            para disfrutar de una comida diferente.
-        </p>
+        <section id="descripcion">
+            <h2>Descripción</h2>
 
-        <h3>Vídeo de la receta</h3>
+            <p>
+                La pizza durum es una receta que combina los ingredientes típicos
+                de una pizza con el sabor del durum. Es fácil de preparar y perfecta
+                para disfrutar de una comida diferente.
+            </p>
 
-        <video controls loop>
-            <source src="Imagenes/VIDEO PIZZA.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este vídeo.
-        </video>
-    </section>
+            <h3>Foto de la receta</h3>
 
-    <section id="ingredientes">
-        <h2>Ingredientes</h2>
+            <img src="Imagenes/pizza durum.png" alt="Pizza durum casera">
 
-        <ul>
-            <li>1 base de pizza</li>
-            <li>Pollo</li>
-            <li>Cebolla</li>
-            <li>Tomate</li>
-            <li>Queso mozzarella</li>
-            <li>Lechuga</li>
-            <li>Salsa de yogur</li>
-            <li>Salsa de tomate</li>
-            <li>Aceite, sal, pimienta y pimentón</li>
-        </ul>
-    </section>
+            <hr>
 
-    <section id="preparacion">
-        <h2>Preparación</h2>
+            <h3>Vídeo de la receta</h3>
 
-        <ol>
-            <li>Precalentar el horno según las indicaciones de la base de pizza.</li>
-            <li>Cortar el pollo y la cebolla en trozos pequeños.</li>
-            <li>Cocinar el pollo en una sartén con un poco de aceite y especias.</li>
-            <li>Extender la salsa de tomate sobre la base de pizza.</li>
-            <li>Añadir el pollo, la cebolla y el queso mozzarella.</li>
-            <li>Hornear durante 10-15 minutos, hasta que el queso esté fundido.</li>
-            <li>Añadir la lechuga y la salsa de yogur antes de servir.</li>
-        </ol>
+            <video controls loop>
+                <source src="Imagenes/VIDEO PIZZA.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este vídeo.
+            </video>
+        </section>
 
-        
-    </section>
+        <section id="ingredientes">
+            <h2>Ingredientes</h2>
 
-    <section id="informacion">
-        <h2>Información de la receta</h2>
+            <ul>
+                <li>1 base de pizza</li>
+                <li>Pollo</li>
+                <li>Cebolla</li>
+                <li>Tomate</li>
+                <li>Queso mozzarella</li>
+                <li>Lechuga</li>
+                <li>Salsa de yogur</li>
+                <li>Salsa de tomate</li>
+                <li>Aceite, sal, pimienta y pimentón</li>
+            </ul>
+        </section>
 
-        <p><strong>Dificultad:</strong> Fácil</p>
-        <p><strong>Tiempo de preparación:</strong> 15 minutos</p>
-        <p><strong>Tiempo de cocción:</strong> 10-15 minutos</p>
-        <p><strong>Tipo de dieta:</strong> Omnívora</p>
+        <section id="preparacion">
+            <h2>Preparación</h2>
 
-        <h3>Tabla de información</h3>
+            <ol>
+                <li>Precalentar el horno según las indicaciones de la base de pizza.</li>
+                <li>Cortar el pollo y la cebolla en trozos pequeños.</li>
+                <li>Cocinar el pollo en una sartén con un poco de aceite y especias.</li>
+                <li>Extender la salsa de tomate sobre la base de pizza.</li>
+                <li>Añadir el pollo, la cebolla y el queso mozzarella.</li>
+                <li>Hornear durante 10-15 minutos, hasta que el queso esté fundido.</li>
+                <li>Añadir la lechuga y la salsa de yogur antes de servir.</li>
+            </ol>
 
-        <table>
-            <tr>
-                <th>Dificultad</th>
-                <th>Preparación</th>
-                <th>Cocción</th>
-            </tr>
-            <tr>
-                <td>Fácil</td>
-                <td>15 minutos</td>
-                <td>10-15 minutos</td>
-            </tr>
-        </table>
+            <p>
+                <strong>Consejo:</strong> Añade la lechuga después de hornear
+                para que se mantenga fresca.
+            </p>
+        </section>
 
-        <h3>Intolerancias y alérgenos</h3>
+        <section id="informacion">
+            <h2>Información de la receta</h2>
 
-        <p>Esta receta puede contener los siguientes alérgenos o ingredientes problemáticos:</p>
+            <p><strong>Dificultad:</strong> Fácil.</p>
+            <p><strong>Tiempo de preparación:</strong> 15 minutos.</p>
+            <p><strong>Tiempo de cocción:</strong> 10-15 minutos.</p>
+            <p><strong>Tipo de dieta:</strong> Omnívora.</p>
 
-        <ul>
-            <li>Gluten</li>
-            <li>Lactosa</li>
-            <li>Fructosa</li>
-            <li>Marisco</li>
-            <li>Huevo</li>
-            <li>Frutos secos</li>
-            <li>Soja</li>
-            <li>Ingredientes picantes</li>
-            <li>Cacahuetes</li>
-        </ul>
+            <h3>Tabla de información</h3>
 
-        <p>Revisa las etiquetas de los productos para comprobar los ingredientes y posibles trazas.</p>
+            <table>
+                <tr>
+                    <th>Dificultad</th>
+                    <th>Preparación</th>
+                    <th>Cocción</th>
+                </tr>
+                <tr>
+                    <td>Fácil</td>
+                    <td>15 minutos</td>
+                    <td>10-15 minutos</td>
+                </tr>
+            </table>
 
-        <h3>Más recetas</h3>
+            <h3>Intolerancias y alérgenos</h3>
 
-        <button onclick="location.href='https://www.google.com'">
-            Buscar más recetas
-        </button>
-    </section>
+            <p>
+                Esta receta puede contener gluten y lactosa, dependiendo
+                de los ingredientes utilizados. Hay que revisar las etiquetas
+                de los productos para comprobar su composición y posibles trazas.
+            </p>
+
+            <ul>
+                <li><strong>Gluten:</strong> puede estar presente en la base de pizza.</li>
+                <li><strong>Lactosa:</strong> puede estar presente en el queso y la salsa de yogur.</li>
+                <li><strong>Fructosa:</strong> revisar la composición de las salsas y otros ingredientes.</li>
+                <li><strong>Marisco:</strong> no se añade intencionadamente.</li>
+                <li><strong>Huevos:</strong> revisar las etiquetas de las salsas.</li>
+                <li><strong>Frutos secos:</strong> no se añaden intencionadamente.</li>
+                <li><strong>Soja:</strong> revisar las etiquetas de los productos preparados.</li>
+                <li><strong>Picante:</strong> depende de las especias que se utilicen.</li>
+                <li><strong>Cacahuetes:</strong> no se añaden intencionadamente.</li>
+            </ul>
+
+            <h3>Tipos de dieta</h3>
+
+            <ul>
+                <li><strong>Omnívora:</strong> sí, porque lleva pollo.</li>
+                <li><strong>Celíaca:</strong> solo con ingredientes certificados sin gluten y evitando la contaminación cruzada.</li>
+                <li><strong>Vegana:</strong> no, porque lleva pollo y queso.</li>
+                <li><strong>Vegetariana:</strong> habría que quitar el pollo y comprobar los demás ingredientes.</li>
+                <li><strong>Flexitariana:</strong> puede encajar dependiendo de la alimentación de cada persona.</li>
+            </ul>
+
+            <hr>
+
+            <h3>Más recetas</h3>
+
+            <p>
+                Si quieres descubrir más recetas, puedes visitar Google.
+            </p>
+
+            <a class="boton"
+               href="https://www.google.com"
+               target="_blank">
+                Buscar más recetas
+            </a>
+        </section>
+
+    </main>
 
     <footer>
-        <p>© 2026 Recetas con Marc. Todos los derechos reservados.</p>
+        <p>© 2026 Recetas con Marc.</p>
         <p>Programador: Marc Flores Gutsens</p>
+
+        <p>
+            Licencia:
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">
+                Creative Commons BY-NC-SA 4.0
+            </a>
+        </p>
+
         <p>
             Email:
-            <a href="mailto:marcfloresgutsens@gmail.com" style="color: white;">
+            <a href="mailto:marcfloresgutsens@gmail.com">
                 marcfloresgutsens@gmail.com
             </a>
         </p>
@@ -260,3 +321,4 @@
 
 </body>
 </html>
+```
