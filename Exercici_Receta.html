@@ -1,231 +1,12 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIZZA DURUM</title>
-
-<style>
-    body {
-        background-color: #f8f4ed;
-        font-family: Arial, sans-serif;
-        color: #38312b;
-        margin: 0;
-        padding: 20px;
-        text-align: left;
-        line-height: 1.6;
-    }
-
-    header {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #Receta {
-        color: white;
-        background-color: #b85c38;
-        margin: 20px auto;
-        padding: 30px 20px;
-        border-radius: 12px;
-        max-width: 1000px;
-        font-size: 38px;
-        letter-spacing: 2px;
-        box-shadow: 0 4px 10px rgba(80, 45, 25, 0.12);
-    }
-
-    header p {
-        color: #75675b;
-    }
-
-    nav {
-        text-align: center;
-        margin: 25px auto;
-        max-width: 1050px;
-    }
-
-    nav a {
-        color: #655044;
-        margin: 5px;
-        padding: 8px 12px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        border-radius: 6px;
-        transition: 0.2s;
-    }
-
-    nav a:hover {
-        color: white;
-        background-color: #b85c38;
-    }
-
-    nav a.active {
-        color: white;
-        background-color: #b85c38;
-    }
-
-    main {
-        max-width: 1040px;
-        margin: auto;
-    }
-
-    section {
-        background-color: white;
-        max-width: 1000px;
-        margin: 25px auto;
-        padding: 28px;
-        border-radius: 12px;
-        text-align: left;
-        box-shadow: 0 3px 12px rgba(80, 45, 25, 0.07);
-    }
-
-    h2, h3 {
-        color: #a84f2d;
-    }
-
-    h2 {
-        padding-bottom: 8px;
-        border-bottom: 2px solid #f0dfd2;
-    }
-
-    hr {
-        border: none;
-        border-top: 1px solid #e4d7ca;
-        margin: 25px 0;
-    }
-
-    
-    img {
-        width: 300px;
-        max-width: 100%;
-        border-radius: 10px;
-        display: block;
-        margin: 15px 0;
-        }
-
-    img.foto-chef {
-        width: 150px !important;
-        max-width: 150px !important;
-        height: auto !important;
-    }
-
-    video {
-        width: 100%;
-        max-width: 900px;
-        border-radius: 10px;
-        display: block;
-        margin: 20px auto;
-        background-color: #2b2521;
-    }
-
-    ul, ol {
-        padding-left: 25px;
-    }
-
-    li {
-        padding: 3px 0;
-    }
-
-    button, .boton {
-        background-color: #b85c38;
-        color: white;
-        padding: 12px 22px;
-        border: none;
-        border-radius: 7px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        font-weight: bold;
-        transition: 0.2s;
-    }
-
-    button:hover, .boton:hover {
-        background-color: #8f4127;
-    }
-
-    table {
-        border-collapse: separate;
-        border-spacing: 0;
-        width: 100%;
-        border-radius: 8px;
-        overflow: hidden;
-        margin: 15px 0;
-    }
-
-    th, td {
-        border: 1px solid #eadbd0;
-        padding: 12px;
-        text-align: center;
-    }
-
-    th {
-        background-color: #b85c38;
-        color: white;
-    }
-
-    td {
-        background-color: #fffaf5;
-    }
-
-    footer {
-        background-color: #39302a;
-        color: #f8f4ed;
-        text-align: center;
-        padding: 22px;
-        border-radius: 12px;
-        max-width: 1010px;
-        margin: 25px auto;
-    }
-
-    footer a {
-        color: #f2b995;
-    }
-
-    footer a:hover {
-        color: white;
-    }
-
-    @media (max-width: 600px) {
-        body {
-            padding: 10px;
-        }
-
-        #Receta {
-            font-size: 29px;
-            padding: 22px 12px;
-        }
-
-        nav {
-            margin: 15px auto;
-        }
-
-        nav a {
-            display: inline-block;
-            margin: 4px;
-            padding: 7px 9px;
-        }
-
-        section {
-            padding: 18px;
-            margin: 15px auto;
-        }
-
-        th, td {
-            padding: 8px 4px;
-            font-size: 14px;
-        }
-
-        footer {
-            padding: 18px 12px;
-            overflow-wrap: anywhere;
-        }
-        
-        
-
-    }
-</style>
-
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -236,19 +17,27 @@
 </header>
 
 <nav>
-    <a href="Exercici_Receta.html" class="active">Inicio</a>
-    <a href="#descripcion">Descripción</a>
-    <a href="#historia">Historia de la receta</a>
-    <a href="#ingredientes">Ingredientes</a>
-    <a href="#preparacion">Preparación</a>
-    <a href="#informacion">Información</a>
+    <a href="Exercici_Receta.html" class="active">Pizza Durum</a>
+    <a href="Receta2.html">Segunda receta</a>
     <a href="FormularioReceta.html">Formulario</a>
-    <a href="https://www.google.com" target="_blank">Web externa</a>
 </nav>
 
 <hr>
 
 <main>
+
+    <section>
+        <h2>Menú de la receta</h2>
+
+        <div class="minimenu">
+            <a href="#descripcion">Descripción</a>
+            <a href="#historia">Historia</a>
+            <a href="#ingredientes">Ingredientes</a>
+            <a href="#preparacion">Preparación</a>
+            <a href="#informacion">Información</a>
+            <a href="#dietas">Tipos de dieta</a>
+        </div>
+    </section>
 
     <section id="descripcion">
         <h2>Descripción</h2>
@@ -269,37 +58,32 @@
 
         <video controls loop>
             <source src="Imagenes/VIDEO PIZZA.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este vídeo.
         </video>
     </section>
 
-    
     <section id="historia">
         <h2>Historia de la receta</h2>
 
         <p>
-        Esta receta la aprendí de mi amigo Nadai Wallahi, un chef
-        experto en durums desde que tenía cinco años. Desde pequeño
-        ha perfeccionado sus técnicas hasta convertirse en todo un
-        especialista en este tipo de comida.
+            Esta receta la aprendí de mi amigo Nadai Wallahi, un chef
+            experto en durums desde que tenía cinco años. Desde pequeño
+            ha perfeccionado sus técnicas hasta convertirse en todo un
+            especialista en este tipo de comida.
         </p>
 
         <p>
-        Gracias a él descubrí cómo combinar el sabor del durum con
-        el de una pizza, creando esta receta tan especial. Sin sus
-        conocimientos y su experiencia, esta pizza durum no sería
-        lo mismo.
+            Gracias a él descubrí cómo combinar el sabor del durum con
+            el de una pizza, creando esta receta tan especial. Sin sus
+            conocimientos y su experiencia, esta pizza durum no sería
+            lo mismo.
         </p>
 
-        
         <h3>El chef Nadai Wallahi</h3>
 
         <img src="Imagenes/TIO NADAI WALLAHI.png"
-            alt="Nadai Wallahi, experto en durums"
-            class="foto-chef">
-
+             alt="Nadai Wallahi, experto en durums"
+             class="foto-chef">
     </section>
-
 
     <section id="ingredientes">
         <h2>Ingredientes</h2>
@@ -379,7 +163,7 @@
             <li><strong>Cacahuetes:</strong> no se añaden intencionadamente.</li>
         </ul>
 
-        <h3>Tipos de dieta</h3>
+        <h3 id="dietas">Tipos de dieta</h3>
 
         <ul>
             <li><strong>Omnívora:</strong> sí, porque lleva pollo.</li>
@@ -394,13 +178,12 @@
         <h3>Más recetas</h3>
 
         <p>
-            Si quieres descubrir más recetas, puedes visitar Google.
+            Si quieres descubrir otra receta, puedes visitar
+            nuestra segunda página.
         </p>
 
-        <a class="boton"
-           href="https://www.google.com"
-           target="_blank">
-            Buscar más recetas
+        <a class="boton" href="Receta2.html">
+            Ver Pizza Barbacoa
         </a>
     </section>
 

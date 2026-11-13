@@ -1,212 +1,31 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario - PIZZA DURUM</title>
-
-<style>
-    body {
-        background-color: #f8f4ed;
-        font-family: Arial, sans-serif;
-        color: #38312b;
-        margin: 0;
-        padding: 20px;
-        text-align: left;
-        line-height: 1.6;
-    }
-
-    header {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #Receta {
-        color: white;
-        background-color: #b85c38;
-        margin: 20px auto;
-        padding: 30px 20px;
-        border-radius: 12px;
-        max-width: 1000px;
-        font-size: 38px;
-        letter-spacing: 2px;
-        box-shadow: 0 4px 10px rgba(80, 45, 25, 0.12);
-    }
-
-    header p {
-        color: #75675b;
-    }
-
-    nav {
-        text-align: center;
-        margin: 25px auto;
-        max-width: 1050px;
-    }
-
-    nav a {
-        color: #655044;
-        margin: 5px;
-        padding: 8px 12px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        border-radius: 6px;
-        transition: 0.2s;
-    }
-
-    nav a:hover {
-        color: white;
-        background-color: #b85c38;
-    }
-
-    nav a.active {
-        color: white;
-        background-color: #b85c38;
-    }
-
-    main {
-        max-width: 1040px;
-        margin: auto;
-    }
-
-    section {
-        background-color: white;
-        max-width: 1000px;
-        margin: 25px auto;
-        padding: 28px;
-        border-radius: 12px;
-        box-shadow: 0 3px 12px rgba(80, 45, 25, 0.07);
-    }
-
-    h2, h3 {
-        color: #a84f2d;
-    }
-
-    h2 {
-        padding-bottom: 8px;
-        border-bottom: 2px solid #f0dfd2;
-    }
-
-    input, select, textarea {
-        display: block;
-        width: 100%;
-        padding: 12px;
-        margin-top: 6px;
-        margin-bottom: 18px;
-        box-sizing: border-box;
-        border: 1px solid #d8c9bc;
-        border-radius: 7px;
-        background-color: #fffdfb;
-        color: #38312b;
-        font-family: Arial, sans-serif;
-        font-size: 15px;
-    }
-
-    input:focus, select:focus, textarea:focus {
-        outline: none;
-        border-color: #b85c38;
-    }
-
-    input[type="checkbox"],
-    input[type="radio"] {
-        display: inline;
-        width: auto;
-        margin-right: 6px;
-        accent-color: #b85c38;
-    }
-
-    label {
-        color: #4b4037;
-    }
-
-    button {
-        background-color: #b85c38;
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 7px;
-        cursor: pointer;
-        font-size: 15px;
-        font-weight: bold;
-        transition: 0.2s;
-    }
-
-    button:hover {
-        background-color: #8f4127;
-    }
-
-    footer {
-        background-color: #39302a;
-        color: #f8f4ed;
-        text-align: center;
-        padding: 22px;
-        border-radius: 12px;
-        max-width: 1010px;
-        margin: 25px auto;
-    }
-
-    footer a {
-        color: #f2b995;
-    }
-
-    footer a:hover {
-        color: white;
-    }
-
-    @media (max-width: 600px) {
-        body {
-            padding: 10px;
-        }
-
-        #Receta {
-            font-size: 29px;
-            padding: 22px 12px;
-        }
-
-        nav {
-            margin: 15px auto;
-        }
-
-        nav a {
-            display: inline-block;
-            margin: 4px;
-            padding: 7px 9px;
-        }
-
-        section {
-            padding: 18px;
-            margin: 15px auto;
-        }
-
-        footer {
-            padding: 18px 12px;
-            overflow-wrap: anywhere;
-        }
-    }
-</style>
-
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 <header>
-    <h1 id="Receta">PIZZA DURUM</h1>
+    <h1 id="Receta">CONTACTO Y FORMULARIO</h1>
     <p>Autor: Marc Flores Gutsens</p>
 </header>
 
-   <nav>
-        <a href="Exercici_Receta.html">Inicio</a>
-        <a href="Exercici_Receta.html#descripcion">Descripción</a>
-        <a href="Exercici_Receta.html#ingredientes">Ingredientes</a>
-        <a href="Exercici_Receta.html#preparacion">Preparación</a>
-        <a href="Exercici_Receta.html#informacion">Información</a>
-        <a href="FormularioReceta.html" class="active">Formulario</a>
-        <a href="https://www.google.com" target="_blank">Web externa</a>
-    </nav>
-    <hr>
+<nav>
+    <a href="Exercici_Receta.html">Pizza Durum</a>
+    <a href="Receta2.html">Segunda receta</a>
+    <a href="FormularioReceta.html" class="active">Formulario</a>
+</nav>
+
+<hr>
 
 <main>
+
     <section>
         <h2>Formulario de recetas</h2>
 
@@ -218,13 +37,27 @@
         <form action="#" method="get">
 
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Escribe tu nombre" required>
 
             <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@gmail.com" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"
+                   placeholder="Escribe tu teléfono">
+
+            <label for="fecha">Fecha de contacto:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"
+                   min="1" max="120">
 
             <label for="receta">Nombre de la receta:</label>
-            <input type="text" id="receta" name="receta" required>
+            <input type="text" id="receta" name="receta"
+                   placeholder="Escribe el nombre de la receta">
 
             <label for="dificultad">Dificultad de la receta:</label>
             <select id="dificultad" name="dificultad">
@@ -233,24 +66,75 @@
                 <option value="dificil">Difícil</option>
             </select>
 
-            <p>¿Te ha gustado la web?</p>
+           <p>¿Te ha gustado la web?</p>
 
-            <input type="radio" id="si" name="opinion" value="si">
-            <label for="si">Sí</label>
+<div class="opciones-radio">
+    <label>
+        Sí
+        <input type="radio" name="valoracion" value="si" required>
+    </label>
 
-            <input type="radio" id="no" name="opinion" value="no">
-            <label for="no">No</label>
-            <br/>
-            <label for="comentario">Comentarios:</label>
-            <textarea id="comentario" name="comentario" rows="5"></textarea>
+    <label>
+        No
+        <input type="radio" name="valoracion" value="no">
+    </label>
+</div>
+            <textarea id="comentario" name="comentario"
+                      rows="5"
+                      placeholder="Escribe aquí tu opinión"></textarea>
 
-            <input type="checkbox" id="acepto" name="acepto" required>
-            <label for="acepto">Acepto enviar este formulario.</label>
+           <div class="opciones-radio">
+    <label>
+        Acepto enviar este formulario
+        <input type="checkbox" name="acepto" required>
+    </label>
+</div>
 
-            <button type="submit">Enviar</button>
+    <br>
+            <div class="botones-formulario">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear formulario</button>
+            </div>
 
         </form>
     </section>
+
+    <section>
+        <h2>Días disponibles para contactar</h2>
+
+        <p>
+            Estos son los días y horarios en los que puedes
+            contactar conmigo.
+        </p>
+
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Horario disponible</th>
+            </tr>
+
+            <tr>
+                <td>Lunes</td>
+                <td>16:00 - 19:00</td>
+            </tr>
+
+            <tr>
+                <td>Miércoles</td>
+                <td>16:00 - 19:00</td>
+            </tr>
+
+            <tr>
+                <td>Viernes</td>
+                <td>17:00 - 20:00</td>
+            </tr>
+
+            <tr>
+                <td>Sábado</td>
+                <td>10:00 - 13:00</td>
+            </tr>
+        </table>
+    </section>
+
 </main>
 
 <footer>

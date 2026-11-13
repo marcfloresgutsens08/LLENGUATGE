@@ -1,0 +1,308 @@
+
+body {
+    background-color: #f8f4ed;
+    font-family: Arial, sans-serif;
+    color: #38312b;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+#Receta {
+    color: white;
+    background-color: #b85c38;
+    margin: 20px auto;
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    font-size: 38px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(80, 45, 25, 0.12);
+}
+
+header p {
+    color: #75675b;
+}
+
+nav {
+    text-align: center;
+    margin: 25px auto;
+    max-width: 1050px;
+}
+
+nav a {
+    color: #655044;
+    margin: 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #b85c38;
+}
+
+nav a.active {
+    color: white;
+    background-color: #b85c38;
+}
+
+main {
+    max-width: 1040px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(80, 45, 25, 0.07);
+}
+
+h2, h3 {
+    color: #a84f2d;
+}
+
+h2 {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0dfd2;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e4d7ca;
+    margin: 25px 0;
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 15px 0;
+}
+
+img.foto-chef {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: auto !important;
+}
+
+video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    background-color: #2b2521;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    padding: 3px 0;
+}
+
+button, .boton {
+    background-color: #b85c38;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover, .boton:hover {
+    background-color: #8f4127;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #eadbd0;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #b85c38;
+    color: white;
+}
+
+td {
+    background-color: #fffaf5;
+}
+
+/* Minimenu con Flexbox */
+
+.minimenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.minimenu a {
+    background-color: #f8f0e9;
+    color: #655044;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 7px;
+    flex: 1 1 30%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.minimenu a:hover {
+    background-color: #b85c38;
+    color: white;
+}
+
+/* Formulario */
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #4b4037;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    border: 1px solid #d8c9bc;
+    border-radius: 7px;
+    background-color: #fffdfb;
+    color: #38312b;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #b85c38;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    accent-color: #b85c38;
+    margin-right: 6px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.botones-formulario {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #39302a;
+    color: #f8f4ed;
+    text-align: center;
+    padding: 22px;
+    border-radius: 12px;
+    max-width: 1010px;
+    margin: 25px auto;
+}
+
+footer a {
+    color: #f2b995;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #Receta {
+        font-size: 29px;
+        padding: 22px 12px;
+    }
+
+    nav {
+        margin: 15px auto;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px;
+        padding: 7px 9px;
+    }
+
+    section {
+        padding: 18px;
+        margin: 15px auto;
+    }
+
+    th, td {
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 18px 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .minimenu a {
+        flex: 1 1 40%;
+    }
+    .opciones-radio {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    }
+
+    .opciones-radio label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: auto;
+    }
+
+    .opciones-radio input {
+    width: auto;
+    margin: 0;
+    }
+}
